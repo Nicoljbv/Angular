@@ -1,0 +1,34 @@
+<div class="container-register">
+    <p>Registrarse</p>
+    <br>
+    <label>Nombre</label>
+    <input type="text" formControlName="nombre" required>
+          <span *ngIf="this.formularioContacto.get('nombre')?.errors?.['required']">
+            Campo Obligatorio
+          </span>
+    <br>
+    <label></label>
+    <input type="text" formControlName="apellido" required>
+          <span *ngIf="this.formularioContacto.get('nombre')?.errors?.['required']">
+            Campo Obligatorio
+          </span>
+    <br>
+    <label>Email</label>
+    <input type="text" >
+    <br>
+    <label>Contraseña</label>
+    <input type="text" >
+    <br>
+    <button>Guardar</button>
+
+
+    <form [formGroup]="formularioContacto" (ngSubmit)="submit()">
+        <p>Nombre:
+          <input type="text" formControlName="nombre" required>
+          <span *ngIf="this.formularioContacto.get('nombre')?.errors?.['required']">
+            (El nombre no puede quedar vacío)
+          </span>
+        </p>
+        <button type="submit">Confirmar</button>
+    </form>
+</div>

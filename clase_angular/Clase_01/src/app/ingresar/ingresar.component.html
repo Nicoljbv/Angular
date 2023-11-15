@@ -1,11 +1,19 @@
 <div class="container-login">
     <p>Iniciar Sesión</p>
     <br>
-    <label>Usuario:</label>
-    <input type="text" required>
-    <br><br>
-    <label>Contraseña</label>
-    <input type="password" required>
-    <br><br>
-    <button>Ingresar</button>
+    <form [formGroup]="formularioContacto" (ngSubmit)="submit()">
+        <p>Nombre:
+          <input type="text" formControlName="nombre"  required>
+          <span *ngIf="this.formularioContacto.get('nombre')?.errors?.['required']">
+            *
+          </span>
+        </p>
+        <p>Clave:
+            <input type="password" formControlName="clave"  required>
+            <span *ngIf="this.formularioContacto.get('clave')?.errors?.['required']">
+              *
+            </span>
+          </p>
+        <button type="submit">Ingresar</button>
+    </form>
 </div>

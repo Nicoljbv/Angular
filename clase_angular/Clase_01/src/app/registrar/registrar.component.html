@@ -1,34 +1,33 @@
 <div class="container-register">
     <p>Registrarse</p>
     <br>
-    <label>Nombre</label>
-    <input type="text" formControlName="nombre" required>
-          <span *ngIf="this.formularioContacto.get('nombre')?.errors?.['required']">
-            Campo Obligatorio
-          </span>
-    <br>
-    <label></label>
-    <input type="text" formControlName="apellido" required>
-          <span *ngIf="this.formularioContacto.get('nombre')?.errors?.['required']">
-            Campo Obligatorio
-          </span>
-    <br>
-    <label>Email</label>
-    <input type="text" >
-    <br>
-    <label>Contraseña</label>
-    <input type="text" >
-    <br>
-    <button>Guardar</button>
-
-
+  
     <form [formGroup]="formularioContacto" (ngSubmit)="submit()">
         <p>Nombre:
           <input type="text" formControlName="nombre" required>
           <span *ngIf="this.formularioContacto.get('nombre')?.errors?.['required']">
-            (El nombre no puede quedar vacío)
+            *
+          </span>
+        </p>
+        <p>Apellido:
+          <input type="text" formControlName="apellido" required>
+          <span *ngIf="this.formularioContacto.get('apellido')?.errors?.['required']">
+            *
+          </span>
+        </p>
+        <p>Correo:
+          <input type="text" formControlName="correo" required>
+          <span *ngIf="this.formularioContacto.get('correo')?.errors?.['required']">
+            *
+          </span>
+        </p>
+        <p>Clave:
+          <input type="text" formControlName="clave" required>
+          <span *ngIf="this.formularioContacto.get('clave')?.errors?.['required']">
+            *
           </span>
         </p>
         <button type="submit">Confirmar</button>
     </form>
+    <p>{{ resultado }}</p>
 </div>

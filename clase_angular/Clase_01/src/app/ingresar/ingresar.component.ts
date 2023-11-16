@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-ingresar',
@@ -10,7 +11,8 @@ export class IngresarComponent {
 
   existe:Boolean=false
   claveLocalStorage = 'datosUsuarios';
-  constructor() { }
+
+  constructor(private router: Router) { }
 
   formularioContacto = new FormGroup({
     nombre: new FormControl('', [Validators.required]),
@@ -36,6 +38,7 @@ export class IngresarComponent {
       console.log(this.formularioContacto.value.nombre);
       console.log(this.formularioContacto.value.clave);
       
+      this.router.navigate(['/dashboard']);
       
     } else {
       console.log("Usuario o clave incorrectos");

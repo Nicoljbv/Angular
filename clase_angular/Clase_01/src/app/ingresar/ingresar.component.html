@@ -1,19 +1,23 @@
-<div class="container-login">
-    <p>Iniciar Sesión</p>
-    <br>
+<div class="body">
+  <div class="container-login">  
     <form [formGroup]="formularioContacto" (ngSubmit)="submit()">
-        <p>Nombre:
-          <input type="text" formControlName="nombre"  required>
+      <p class="titulo">Iniciar Sesión</p>
+        <p>Nombre
+          <i class="fa-solid fa-user-tie"></i><input type="text" formControlName="nombre"  required>
           <span *ngIf="this.formularioContacto.get('nombre')?.errors?.['required']">
             *
           </span>
         </p>
-        <p>Clave:
-            <input type="password" formControlName="clave"  required>
+        <p>Clave
+            <i class="fa-solid fa-lock"></i><input type="password" formControlName="clave"  required>
             <span *ngIf="this.formularioContacto.get('clave')?.errors?.['required']">
               *
             </span>
           </p>
-        <button type="submit">Ingresar</button>
+          <div class="btn">
+            <button type="submit">Ingresar</button>
+          </div>
+        
     </form>
+</div>
 </div>

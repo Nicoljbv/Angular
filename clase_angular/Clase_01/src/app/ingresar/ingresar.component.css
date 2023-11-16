@@ -1,0 +1,44 @@
+.body{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.container-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BFC3C8;
+    width: 300px;
+    height: 300px;
+}
+
+.titulo{
+    font-size: 25px;
+}
+
+input{
+    display: block;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background-color: #BFC3C8;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: #8F9397;
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+}
+
+button:hover{
+    border: 1px solid black;
+}

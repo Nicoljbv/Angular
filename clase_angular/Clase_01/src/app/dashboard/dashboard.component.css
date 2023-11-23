@@ -63,4 +63,52 @@
     border: 1px solid black;
 }
 
+.cards{
+    display: grid;
+    place-items: center;
+    
+}
 
+.poke{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: 4%;
+    width: 85%;
+    box-shadow: 2px 2px 8px 2px black;
+}
+
+.img-poke{
+    width: 150px;
+    height: 150px;
+}
+
+.nombre1{
+    font-size: 150px;
+    font-family: Calisto MT;
+    color: rgb(240, 218, 23);
+}
+
+.nombre2{
+    font-size: 150px;
+    font-family: Calisto MT;
+    color: rgb(157, 201, 243);
+}
+
+.nombre3{
+    font-size: 150px;
+    font-family: Calisto MT;
+    color: rgb(247, 129, 60);
+}
+
+.nombre4{
+    font-size: 150px;
+    font-family: Calisto MT;
+    color: rgb(34, 136, 93);
+}
+
+.tipo-poke{
+    font-family: Calisto MT;
+    color: rgb(70, 64, 64);
+}

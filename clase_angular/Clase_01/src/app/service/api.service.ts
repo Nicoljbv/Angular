@@ -7,11 +7,12 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
-  private urlApi = 'https://pokeapi.co/api/v2/pokemon/';
+  private urlApi = '/api/v2/pokemon/';
+
 
   constructor(private http: HttpClient) { }
 
-  public getData (): Observable<any> {
-    return this.http.get<any>(this.urlApi);
+  public getData (id:number): Observable<any> {
+    return this.http.get<any>(`${this.urlApi}/${id}`);
   }
 }

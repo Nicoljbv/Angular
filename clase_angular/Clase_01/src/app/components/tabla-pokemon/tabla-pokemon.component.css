@@ -1,0 +1,33 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 500px;
+    min-height: 300px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.contenedor-poke{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(175, 160, 160);
+}
+
+.info-poke{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    font-weight: 600;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 500;
+}

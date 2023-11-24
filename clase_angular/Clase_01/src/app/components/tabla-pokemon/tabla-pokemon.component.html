@@ -1,0 +1,26 @@
+<div class="body">
+    <div class="card" *ngIf="pokemon">
+        <div class="contenedor-poke">
+            <img class="img-poke" [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}">
+        </div>
+        <div class="info-poke">
+            <p>Nombre: {{ pokemon.name }}</p>
+            <p>Altura: {{ pokemon.height }}m</p>
+            <p>Peso: {{ pokemon.weight }}Lbs</p>
+        </div>
+        
+            <div class="info">
+                <ul>
+                    <p>Habilidades:</p>
+                    <li *ngFor="let ability of pokemon.abilities">{{ ability.ability.name }}</li>
+                </ul>
+        
+                <ul>
+                    <p>Tipo:</p>
+                    <li *ngFor="let type of pokemon.types">{{ type.type.name }}</li>
+                </ul>
+            </div>
+               
+    </div>
+</div>
+

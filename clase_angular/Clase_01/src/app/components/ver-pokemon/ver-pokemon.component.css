@@ -1,0 +1,21 @@
+.body{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor-pokemones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-poke{
+    margin: 8px;
+    border: 1px solid black;
+}
+
+.nombre-poke{
+    background-color: rgb(177, 163, 163);
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-weight: 700;
+}

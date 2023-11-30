@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -8,6 +9,10 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./registrar.component.css']
 })
 export class RegistrarComponent {
+
+  constructor( private router:Router) {
+
+  }
 
   
   resultado: String=''
@@ -40,5 +45,9 @@ export class RegistrarComponent {
     }else{
       this.resultado = "Hay datos vacios o inválidos en el formulario";
   }
+}
+
+login(){
+  this.router.navigate(['/ingresar']);
 }
 }

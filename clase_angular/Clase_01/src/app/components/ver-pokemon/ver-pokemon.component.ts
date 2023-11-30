@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../service/api.service';
 import { forkJoin } from 'rxjs';
 import { Route, Router } from '@angular/router';
-
 @Component({
   selector: 'app-ver-pokemon',
   templateUrl: './ver-pokemon.component.html',
@@ -21,21 +20,26 @@ export class VerPokemonComponent implements OnInit{
 
   llenarData() {
     const observables = [];
-
+  
     for (let i = 1; i <= 150; i++) {
       observables.push(this.apiService.getData(i));
     }
-
-    forkJoin(observables).subscribe((results: any[]) => {
-      this.data = results;
-      console.log(this.data);
-    });
+  
+    forkJoin(observables).subscribe(
+      (results: any[]) => {
+        this.data = results;
+        console.log(this.data);
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
   }
+  // En VerPokemonComponent
+verPokemon(pokemon: any) {
+  this.router.navigate(['/verPokemon', pokemon.id]);
+}
 
-  verPokemon(pokemon: any) {
-    // Navegar al componente TablaPokemonComponent y pasar el ID del Pokémon
-    this.router.navigate(['/verPokemon', pokemon.id]);
-  }
   
   }
 

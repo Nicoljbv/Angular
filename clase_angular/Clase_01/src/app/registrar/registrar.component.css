@@ -62,3 +62,12 @@ button{
 button:hover{
     border: 2px solid black;
 }
+
+.login{
+    text-align: center;
+}
+
+.login:hover{
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}

@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TablaPokemonComponent } from './tabla-pokemon.component';
+import { VerPokeFuegoComponent } from './ver-poke-fuego.component';
 import { MenuComponent } from '../menu/menu.component';
 
-describe('TablaPokemonComponent', () => {
-  let component: TablaPokemonComponent;
-  let fixture: ComponentFixture<TablaPokemonComponent>;
+describe('VerPokeFuegoComponent', () => {
+  let component: VerPokeFuegoComponent;
+  let fixture: ComponentFixture<VerPokeFuegoComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [TablaPokemonComponent, MenuComponent]
+      declarations: [VerPokeFuegoComponent, MenuComponent]
     });
-    fixture = TestBed.createComponent(TablaPokemonComponent);
+    fixture = TestBed.createComponent(VerPokeFuegoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

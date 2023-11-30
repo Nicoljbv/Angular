@@ -11,8 +11,8 @@ export class DashboardComponent {
 
   constructor(private router: Router) { }
 
-  salir(){
-    this.router.navigate(['/ingresar']);
-
+  ingresar(){
+    this.router.navigate(['/registrar']);
   }
+
 }

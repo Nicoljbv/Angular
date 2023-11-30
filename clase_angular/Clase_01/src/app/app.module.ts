@@ -11,6 +11,11 @@ import { RegistrarComponent } from './registrar/registrar.component';
 import { VerPokemonComponent } from '../app/components/ver-pokemon/ver-pokemon.component';
 import { TablaPokemonComponent } from '../app/components/tabla-pokemon/tabla-pokemon.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MenuComponent } from './components/menu/menu.component';
+import { VerPokeAguaComponent } from './components/ver-poke-agua/ver-poke-agua.component';
+import { VerPokeTierraComponent } from './components/ver-poke-tierra/ver-poke-tierra.component';
+import { VerPokeFuegoComponent } from './components/ver-poke-fuego/ver-poke-fuego.component';
+import { VerPokeHierbaComponent } from './components/ver-poke-hierba/ver-poke-hierba.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     IngresarComponent,
     RegistrarComponent,
     VerPokemonComponent,
-    TablaPokemonComponent
+    TablaPokemonComponent,
+    MenuComponent,
+    VerPokeAguaComponent,
+    VerPokeTierraComponent,
+    VerPokeFuegoComponent,
+    VerPokeHierbaComponent
   ],
   imports: [
     BrowserModule,

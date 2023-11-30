@@ -1,11 +1,16 @@
-<p>ver-pokemon works!</p>
-<h2>pokemones</h2>
-<div class="body">
-    <div class="contenedor-pokemones">
-        <div class="card-poke" *ngFor="let pokemon of data">
-            <div class="nombre-poke">{{ pokemon.name }}</div>
-            <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}">
-            <i class="fa-solid fa-eye" (click)="verPokemon(pokemon)"></i>
+<div class="container-total">
+    <div class="menu">
+        <app-menu></app-menu>
+    </div>
+    
+    <div class="body">
+        <div class="contenedor-pokemones">
+            <div class="card-poke" *ngFor="let pokemon of data">
+                <div class="nombre-poke">{{ pokemon.name }}</div>
+                <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}">
+                <i class="fa-solid fa-eye" (click)="verPokemon(pokemon)"></i>
+            </div>
         </div>
     </div>
-</div>
+    
+  </div>

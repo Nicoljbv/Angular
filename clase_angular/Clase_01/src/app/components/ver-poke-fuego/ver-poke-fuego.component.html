@@ -1,0 +1,19 @@
+<div class="container-total">
+    <div class="menu">
+      <app-menu></app-menu>
+    </div>
+    
+    <div class="body">
+      <div class="contenedor-pokemones">
+        <div class="card-poke" *ngFor="let pokemon of data">
+          <!-- Verificar si el tipo del Pokémon es 'water' -->
+          <ng-container *ngIf="tipoFire(pokemon)">
+            <div class="nombre-poke">{{ pokemon.name }}</div>
+            <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}">
+            <i class="fa-solid fa-eye" (click)="verPokemon(pokemon)"></i>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+  

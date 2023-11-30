@@ -37,8 +37,7 @@ export class IngresarComponent {
       console.log("Bienvenido");
       console.log(this.formularioContacto.value.nombre);
       console.log(this.formularioContacto.value.clave);
-      
-      this.router.navigate(['/dashboard']);
+      this.router.navigate(['/pokemon']);
       
     } else {
       console.log("Usuario o clave incorrectos");

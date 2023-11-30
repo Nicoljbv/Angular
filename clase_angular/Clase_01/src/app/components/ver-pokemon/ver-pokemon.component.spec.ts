@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { VerPokemonComponent } from './ver-pokemon.component';
+import { MenuComponent } from '../menu/menu.component';
 
 describe('VerPokemonComponent', () => {
   let component: VerPokemonComponent;
@@ -8,7 +9,7 @@ describe('VerPokemonComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [VerPokemonComponent]
+      declarations:  [VerPokemonComponent, MenuComponent]
     });
     fixture = TestBed.createComponent(VerPokemonComponent);
     component = fixture.componentInstance;

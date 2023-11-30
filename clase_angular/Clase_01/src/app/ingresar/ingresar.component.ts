@@ -46,4 +46,7 @@ export class IngresarComponent {
     this.formularioContacto.reset();
   }
   
+  claveNueva(){
+    this.router.navigate(['/claveN']);
+  }
 }

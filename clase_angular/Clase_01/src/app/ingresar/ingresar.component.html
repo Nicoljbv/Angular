@@ -1,5 +1,6 @@
 <div class="body">
-  <div class="container-login">  
+  <div class="container-login"> 
+   
     <form [formGroup]="formularioContacto" (ngSubmit)="submit()">
       <p class="titulo">Iniciar Sesión</p>
         <p>Nombre
@@ -14,6 +15,8 @@
               *
             </span>
           </p>
+          <div class="claveN" (click)="claveNueva()">Olvidé mi clave</div>
+          <br><br>
           <div class="btn">
             <button type="submit">Ingresar</button>
           </div>

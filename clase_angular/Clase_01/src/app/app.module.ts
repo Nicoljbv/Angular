@@ -16,6 +16,7 @@ import { VerPokeAguaComponent } from './components/ver-poke-agua/ver-poke-agua.c
 import { VerPokeTierraComponent } from './components/ver-poke-tierra/ver-poke-tierra.component';
 import { VerPokeFuegoComponent } from './components/ver-poke-fuego/ver-poke-fuego.component';
 import { VerPokeHierbaComponent } from './components/ver-poke-hierba/ver-poke-hierba.component';
+import { ClaveNuevaComponent } from './clave-nueva/clave-nueva.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { VerPokeHierbaComponent } from './components/ver-poke-hierba/ver-poke-hi
     VerPokeAguaComponent,
     VerPokeTierraComponent,
     VerPokeFuegoComponent,
-    VerPokeHierbaComponent
+    VerPokeHierbaComponent,
+    ClaveNuevaComponent
   ],
   imports: [
     BrowserModule,

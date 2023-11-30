@@ -11,6 +11,7 @@ import { VerPokeAguaComponent } from './components/ver-poke-agua/ver-poke-agua.c
 import { VerPokeFuegoComponent } from './components/ver-poke-fuego/ver-poke-fuego.component';
 import { VerPokeTierraComponent } from './components/ver-poke-tierra/ver-poke-tierra.component';
 import { VerPokeHierbaComponent } from './components/ver-poke-hierba/ver-poke-hierba.component';
+import { ClaveNuevaComponent } from './clave-nueva/clave-nueva.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent},
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'pokemonFuego' , component:VerPokeFuegoComponent},
   { path: 'pokemonTierra' , component:VerPokeTierraComponent},
   { path: 'pokemonHierba' , component:VerPokeHierbaComponent},
+  { path: 'claveN', component:ClaveNuevaComponent}
 
 ];
 

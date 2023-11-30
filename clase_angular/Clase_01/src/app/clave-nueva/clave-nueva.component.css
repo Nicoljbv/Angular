@@ -1,10 +1,10 @@
-  @import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
 
 .body{
     font-family: imprima;
     width: 100%;
     height: 100vh;
-    background-image: url('../../assets/img/fongoLogin.png');
+    background-image: url('../../assets/img/fondoClave.jpg');
     background-size: cover; 
     background-position: center;
 }
@@ -15,9 +15,9 @@
     align-items: center;
     background-color: #1E2940;
     color: white;
-    width: 300px;
+    width: 450px;
     height: 100vh;
-    margin-left: 10%;
+    margin-left: 33%;
 }
 
 .titulo{
@@ -44,20 +44,8 @@ button{
     height: 30px;
     border-radius: 6px;
     border: none;
-    color: black;
-    font-size: 16px;
-    font-weight: 500;
 }
 
 button:hover{
-    border: 3px solid yellow;
-}
-
-.claveN{
-    text-align: center;
-}
-
-.claveN:hover{
-    border-bottom: 1px solid yellow;
-    cursor: pointer;
+    border: 3px solid black;
 }

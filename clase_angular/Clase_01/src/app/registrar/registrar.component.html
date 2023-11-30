@@ -1,45 +1,49 @@
-<div class="body">
-  <div class="titulo">
-    <p>Registrarse</p>
-  </div>
+<div class="container-completo">
+  <div class="fondo"></div>
 
-  <div class="logo">
-    <div class="img"><i class="fa-solid fa-user-plus" id="users"></i></div>
-  </div>
+  <div class="body">
+    <div class="titulo">
+      <p>Registrarse</p>
+    </div>
 
-  <br>
-  <div class="container-register">
-    
-      <form [formGroup]="formularioContacto" (ngSubmit)="submit()">
-          <p>Nombre:
-            <input type="text" formControlName="nombre" required>
-            <span *ngIf="this.formularioContacto.get('nombre')?.errors?.['required']">
-              *
-            </span>
-          </p>
-          <p>Apellido:
-            <input type="text" formControlName="apellido" required>
-            <span *ngIf="this.formularioContacto.get('apellido')?.errors?.['required']">
-              *
-            </span>
-          </p>
-          <p>Correo:
-            <input type="text" formControlName="correo" required>
-            <span *ngIf="this.formularioContacto.get('correo')?.errors?.['required']">
-              *
-            </span>
-          </p>
-          <p>Clave:
-            <input type="text" formControlName="clave" required>
-            <span *ngIf="this.formularioContacto.get('clave')?.errors?.['required']">
-              *
-            </span>
-          </p>
-          <div class="login" (click)="login()">Ya tengo una cuenta</div>
-          <br><br>
-          <div class="btn">
-            <button type="submit">Confirmar</button>
-          </div>
-      </form>
+    <div class="logo">
+      <div class="img"><i class="fa-solid fa-user-plus" id="users"></i></div>
+    </div>
+
+    <br>
+    <div class="container-register">
+      
+        <form [formGroup]="formularioContacto" (ngSubmit)="submit()">
+            <p>Nombre:
+              <input type="text" formControlName="nombre" required>
+              <span *ngIf="this.formularioContacto.get('nombre')?.errors?.['required']">
+                *
+              </span>
+            </p>
+            <p>Apellido:
+              <input type="text" formControlName="apellido" required>
+              <span *ngIf="this.formularioContacto.get('apellido')?.errors?.['required']">
+                *
+              </span>
+            </p>
+            <p>Correo:
+              <input type="text" formControlName="correo" required>
+              <span *ngIf="this.formularioContacto.get('correo')?.errors?.['required']">
+                *
+              </span>
+            </p>
+            <p>Clave:
+              <input type="text" formControlName="clave" required>
+              <span *ngIf="this.formularioContacto.get('clave')?.errors?.['required']">
+                *
+              </span>
+            </p>
+            <div class="login" (click)="login()">Ya tengo una cuenta</div>
+            <br><br>
+            <div class="btn">
+              <button type="submit">Confirmar</button>
+            </div>
+        </form>
+    </div>
   </div>
 </div>

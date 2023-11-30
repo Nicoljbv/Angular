@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
+
 .container-total{
     display: grid;
     grid-template-columns: 50% 30%;
 }
 
 .body{
+    font-family: imprima;
     display: flex;
     justify-content: space-around;
 }

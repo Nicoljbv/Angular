@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
+
 .body{
+    font-family: imprima;
     width: 20%;
     height: 100vh;
-    background-color: rgb(177, 163, 163);
+    background-color: #6A7386;
     display: block;
     position: fixed;
 }
@@ -29,6 +32,6 @@
 }
 
 .opciones:hover{
-    background-color: #3E2A47;
+    background-color: #1E2940;
     color: white;
 }
